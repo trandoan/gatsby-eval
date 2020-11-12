@@ -2,12 +2,7 @@ require("dotenv").config({
   path: `.env`,
 });
 
-const projectPathPrefix =
-  process.env.CI_PROJECT_NAME || "gatsby-website"
-
 module.exports = {
-  // Use CI_PROJECT_NAME variable as pathPrefix, edit/comment if you want to use a custom domain.
-  pathPrefix: `/${projectPathPrefix}`,
   plugins: [
     "gatsby-plugin-react-helmet",
     {
